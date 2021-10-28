@@ -15,19 +15,22 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 
-## Setup 
-### Installation
-
-```bash
-# clone repo
-git clone https://github.com/ThingyThingInc/extra-api.git
-
-# install dependancies
-yarn install
+```http
+  POST v1/users/
 ```
+`userData` = ```json
+{
+    "first_name",
+    "last_name",
+    "email",
+    "phone_number", 
+    "date_of_birth"
+}```
+| Body | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `object` | **Required**. Id of item to fetch |
 
-### Development
+#### add(num1, num2)
 
-```bash
-yarn dev
-```
+Takes two numbers and returns the sum.
+
